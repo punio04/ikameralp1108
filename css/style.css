@@ -1341,7 +1341,7 @@ a:hover {
 
 html[lang="zh-CN"] .lp-interpreter {
   display: block;
-  margin: 0 0 28px;
+  margin: 0 0 28px!important;
   padding: 16px 20px;
   border-left: 3px solid #00aad9;
   background: #edf7fa;
