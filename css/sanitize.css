@@ -1,0 +1,121 @@
+*,
+::after,
+::before {
+  box-sizing: border-box
+}
+
+::after,
+::before {
+  text-decoration: inherit;
+  vertical-align: inherit
+}
+
+html {
+  cursor: default;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  -webkit-tap-highlight-color: transparent;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  word-break: break-word
+}
+
+body,
+button {
+  margin: 0
+}
+
+details,
+main {
+  display: block
+}
+
+a {
+  background-color: transparent
+}
+
+b {
+  font-weight: bolder
+}
+
+iframe,
+img,
+svg {
+  vertical-align: middle
+}
+
+iframe,
+img {
+  border-style: none
+}
+
+svg:not([fill]) {
+  fill: currentColor
+}
+
+svg:not(:root) {
+  overflow: hidden
+}
+
+table {
+  border-collapse: collapse
+}
+
+button {
+  overflow: visible;
+  text-transform: none
+}
+
+[type=button],
+button {
+  -webkit-appearance: button
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto
+}
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: .54
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit
+}
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0
+}
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText
+}
+
+:-moz-ui-invalid {
+  box-shadow: none
+}
+
+summary {
+  display: list-item
+}
+
+a,
+button,
+summary {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation
+}
+
+[aria-hidden=false][hidden]:not(:focus) {
+  clip: rect(0, 0, 0, 0);
+  position: absolute
+}

@@ -1,0 +1,1351 @@
+@charset "UTF-8";
+
+@keyframes lp-header-shine {
+
+  0%,
+  55% {
+    transform: translateX(-150%)
+  }
+
+  85%,
+  to {
+    transform: translateX(150%)
+  }
+}
+
+@keyframes lp-cta-shine {
+
+  0%,
+  45% {
+    transform: translateX(-150%)
+  }
+
+  78%,
+  to {
+    transform: translateX(150%)
+  }
+}
+
+@keyframes closing-consult-shine {
+
+  0%,
+  45% {
+    transform: translateX(-150%)
+  }
+
+  78%,
+  to {
+    transform: translateX(150%)
+  }
+}
+
+@keyframes floating-booking-shine {
+
+  0%,
+  45% {
+    transform: translateX(-150%)
+  }
+
+  78%,
+  to {
+    transform: translateX(150%)
+  }
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-weight: 400;
+  color: #000;
+  padding-bottom: calc(112px + env(safe-area-inset-bottom, 0))
+}
+
+a {
+  text-decoration: underline
+}
+
+a:active,
+a:hover {
+  color: #0c0907
+}
+
+p {
+  margin: 0 !important
+}
+
+section {
+  clear: both;
+  overflow: auto
+}
+
+h2 {
+  margin: .3em 0;
+  font-size: 3em;
+  text-align: center;
+  color: #1781c9
+}
+
+.access h2 {
+  margin-bottom: 48px
+}
+
+.main {
+  background-color: #f2f2f2
+}
+
+.article {
+  background-color: #fff;
+  font-size: 1.6em;
+  width: 100%
+}
+
+.article p {
+  line-height: 1.6
+}
+
+.fv_image_in {
+  margin: 0 auto
+}
+
+.section_inr,
+.top_image_in {
+  width: 950px;
+  margin: 0 auto
+}
+
+.fv_image_in {
+  width: 1060px
+}
+
+.top_image {
+  background-image: url(../images/top_image_back.webp);
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: auto
+}
+
+.top_image_in img,
+iframe {
+  width: 100%
+}
+
+.section_02 {
+  padding: 3em 0 0;
+  background: linear-gradient(to bottom, #fefefe, #e4e4e4)
+}
+
+.section_03 {
+  padding: 2em 0 4em
+}
+
+.section_04 {
+  background-image: url(../images/skyblue_background.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed
+}
+
+.section_05 {
+  padding: 0;
+  background: #eef8ff;
+}
+
+.section_11 {
+  background-color: #fff;
+  padding: 3em 0
+}
+
+iframe {
+  margin-bottom: 28px
+}
+
+.footer {
+  background-color: #f5f5f5;
+  padding: 2em 0;
+  text-align: center;
+  font-size: 1.6em;
+  line-height: 1.7;
+  color: #333;
+  font-family: "Noto Sans JP", sans-serif
+}
+
+.footer b {
+  font-size: 18px
+}
+
+.evaluation_pc,
+.fv_pc,
+.solution_pc,
+.worries_pc {
+  display: block !important
+}
+
+.evaluation_sp,
+.fv_sp,
+.solution_sp,
+.worries_sp {
+  display: none !important
+}
+
+table.address {
+  margin-bottom: 30px;
+  width: 100%
+}
+
+table.address tr:first-child td,
+table.address tr:first-child th {
+  padding-top: 0
+}
+
+table.address th {
+  width: 90px;
+  color: #1781c9;
+  text-align: left
+}
+
+table.address td,
+table.address th {
+  font-family: "Kosugi Maru", sans-serif;
+  padding: 12.5px 0;
+  border-bottom: 1px solid #ccc;
+  line-height: 24px;
+  font-weight: 400
+}
+
+.sticky-bar.show {
+  transform: translateY(0)
+}
+
+.sticky-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+  background: 0 0;
+  pointer-events: none;
+  transform: translateY(110%);
+  transition: transform .35s ease
+}
+
+.sticky-inner {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  max-width: 940px
+}
+
+.sbtn-warm {
+  background: #095f9e;
+  color: #fff !important;
+  flex: 1.35
+}
+
+.sbtn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 20.5px;
+  text-decoration: none;
+  padding: 17px 6px;
+  letter-spacing: .02em;
+  pointer-events: auto;
+  box-shadow: 0 6px 16px rgba(22, 36, 62, .28)
+}
+
+.sbtn-line {
+  background: #02c755;
+  color: #fff !important
+}
+
+.sbtn-tel {
+  flex: 0 0 70px;
+  background: #fff;
+  border: 1px solid #d8e0e9;
+  color: #16243e !important
+}
+
+@media screen and (max-width:768px) {
+  .sticky-inner {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    max-width: 536px
+  }
+}
+
+.sp_only {
+  display: none
+}
+
+.lp-header,
+.lp-header * {
+  box-sizing: border-box
+}
+
+.lp-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  border-bottom: 1px solid #e1e9ec;
+  background: #fff
+}
+
+.lp-header__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 28px;
+  max-width: 1280px;
+  min-height: 100px;
+  margin-inline: auto;
+  padding: 16px 32px
+}
+
+.lp-header__logo {
+  display: block;
+  width: min(100%, 340px)
+}
+
+.lp-header__logo img {
+  display: block;
+  width: 100%;
+  height: auto
+}
+
+.lp-header__language {
+  display: flex;
+  padding: 4px;
+  border-radius: 999px;
+  background: #edf2f5
+}
+
+.lp-header__language-button {
+  appearance: none;
+  display: grid;
+  place-items: center;
+  min-width: 76px;
+  min-height: 38px;
+  margin: 0;
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 999px;
+  background: 0 0;
+  color: #193d80;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: background-color .2s ease, color .2s ease
+}
+
+.lp-header__language-button[aria-pressed=true] {
+  background: #193d80;
+  color: #fff
+}
+
+.lp-header__booking {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  overflow: hidden;
+  min-width: 210px;
+  min-height: 60px;
+  padding: 16px 40px 16px 28px;
+  border: 1px solid #00aad9;
+  border-radius: 7px;
+  background: #00aad9;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  transition: background-color .2s ease
+}
+
+.lp-header__booking::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  z-index: 2;
+  border: 1px solid rgb(255 255 255/90%);
+  border-radius: 3px;
+  pointer-events: none
+}
+
+.lp-header__booking::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(110deg, transparent 30%, rgb(255 255 255/35%) 50%, transparent 70%);
+  transform: translateX(-150%);
+  animation: lp-header-shine 5s ease-in-out infinite;
+  pointer-events: none
+}
+
+.lp-header__booking>* {
+  position: relative;
+  z-index: 1
+}
+
+.lp-header__booking svg {
+  flex: 0 0 22px;
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round
+}
+
+.lp-header__booking>.lp-header__arrow {
+  position: absolute;
+  top: 50%;
+  right: 22px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: translateY(-50%) rotate(45deg)
+}
+
+[data-lp-content][hidden] {
+  display: none !important
+}
+
+.lp-section-image {
+  display: block;
+  width: 100%;
+  height: auto
+}
+
+.lp-header a:focus-visible,
+.lp-header button:focus-visible {
+  outline: 3px solid #193d80;
+  outline-offset: 4px
+}
+
+.exam-cost,
+.exam-cost * {
+  box-sizing: border-box
+}
+
+.exam-cost {
+  padding: 80px 24px;
+  background: #fff;
+  color: #333
+}
+
+.exam-cost__inner {
+  width: 100%;
+  max-width: 950px;
+  margin-inline: auto
+}
+
+.exam-cost__title {
+  margin: 0 0 48px;
+  color: #1781c9;
+  font-family: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: .04em
+}
+
+.exam-cost__title::after {
+  display: block;
+  width: 80px;
+  height: 3px;
+  margin: 24px auto 0;
+  background: #00aad9;
+  content: ""
+}
+
+.exam-cost__background {
+  padding: 28px;
+  background: #e6f3fa
+}
+
+.exam-cost__panel {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 44px;
+  border-top: 3px solid #00aad9;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 6px 14px rgb(30 62 88/12%)
+}
+
+.exam-cost__icon {
+  display: block;
+  flex: 0 0 64px;
+  width: 64px;
+  height: 76px;
+  color: #00aad9
+}
+
+.exam-cost__text {
+  min-width: 0;
+  margin: 0;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 2 !important;
+  overflow-wrap: anywhere
+}
+
+.exam-risk,
+.exam-risk * {
+  box-sizing: border-box
+}
+
+.exam-risk {
+  padding: 88px 24px;
+  background: #f5f9fc;
+  color: #333
+}
+
+.exam-risk__inner {
+  width: 100%;
+  max-width: 950px;
+  margin-inline: auto
+}
+
+.exam-risk__title {
+  margin: 0 0 40px;
+  color: #1781c9;
+  font-family: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: .04em
+}
+
+.exam-risk__title::after {
+  display: block;
+  width: 80px;
+  height: 3px;
+  margin: 24px auto 0;
+  background: #00aad9;
+  content: ""
+}
+
+.exam-risk__panel {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 40px 44px;
+  border: 1px solid #d5e3ed;
+  border-radius: 5px;
+  background: #fff
+}
+
+.exam-risk__icon {
+  display: block;
+  flex: 0 0 56px;
+  width: 56px;
+  height: 56px;
+  margin-top: 4px;
+  color: #193d80
+}
+
+.exam-risk__text {
+  min-width: 0;
+  margin: 0;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 2 !important;
+  overflow-wrap: anywhere
+}
+
+.lp-cta,
+.lp-cta * {
+  box-sizing: border-box
+}
+
+.lp-cta {
+  padding: 48px 20px;
+  background: #eff8fa
+}
+
+.risk-cta {
+  padding: 48px 20px 0;
+  background: initial;
+}
+
+.lp-cta__inner {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 950px;
+  margin-inline: auto
+}
+
+.lp-cta__button {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  overflow: hidden;
+  min-width: 0;
+  min-height: 104px;
+  padding: 22px 48px;
+  border: 1px solid var(--button-color);
+  border-radius: 10px;
+  background: var(--button-color);
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 7px 16px rgb(25 55 75/20%);
+  -webkit-tap-highlight-color: transparent;
+  transition: transform .25s ease, background-color .25s ease, border-color .25s ease, box-shadow .25s ease
+}
+
+.lp-cta__button--web {
+  --button-color: #00aad9;
+  --button-hover: #029bc6
+}
+
+.lp-cta__button--tel {
+  --button-color: #193d80;
+  --button-hover: #123064
+}
+
+.lp-cta__button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(110deg, transparent 30%, rgb(255 255 255/8%) 40%, rgb(255 255 255/38%) 50%, rgb(255 255 255/8%) 60%, transparent 70%);
+  transform: translateX(-150%);
+  animation: lp-cta-shine 4.8s ease-in-out infinite;
+  pointer-events: none
+}
+
+.lp-cta__button--tel::before {
+  animation-delay: .6s
+}
+
+.lp-cta__button::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  z-index: 2;
+  border: 1px solid rgb(255 255 255/90%);
+  border-radius: 5px;
+  pointer-events: none
+}
+
+.lp-cta__button>* {
+  position: relative;
+  z-index: 1
+}
+
+.lp-cta__icon {
+  display: block;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round
+}
+
+.lp-cta__web-text {
+  font-family: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: .03em
+}
+
+.lp-cta__tel-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px
+}
+
+.lp-cta__label {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: .04em
+}
+
+.lp-cta__number {
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap
+}
+
+.lp-cta__button>.lp-cta__arrow {
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: translateY(-50%) rotate(45deg);
+  transition: transform .25s ease
+}
+
+.lp-cta__button:focus-visible {
+  outline: 3px solid #193d80;
+  outline-offset: 5px
+}
+
+.lp-cta__button:active {
+  transform: translateY(1px)
+}
+
+.clinic-faq,
+.clinic-faq * {
+  box-sizing: border-box
+}
+
+.clinic-faq {
+  --faq-accent: #00aad9;
+  --faq-navy: #193d80;
+  padding: 88px 24px;
+  background: #fff;
+  color: #333;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif
+}
+
+.clinic-faq__inner {
+  max-width: 950px;
+  margin-inline: auto
+}
+
+.clinic-faq__title {
+  margin: 0 0 48px;
+  color: var(--faq-navy);
+  font-family: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: .06em;
+  text-align: center
+}
+
+.clinic-faq__title::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 2px;
+  margin: 22px auto 0;
+  background: var(--faq-accent)
+}
+
+.clinic-faq__list {
+  border-top: 1px solid #d5e4e9
+}
+
+.clinic-faq__item {
+  border-bottom: 1px solid #d5e4e9
+}
+
+.clinic-faq__question {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr) 24px;
+  align-items: center;
+  gap: 20px;
+  padding: 28px 20px;
+  color: var(--faq-navy);
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.7;
+  list-style: none;
+  cursor: pointer;
+  transition: background-color .2s ease
+}
+
+.clinic-faq__question::-webkit-details-marker {
+  display: none
+}
+
+.clinic-faq__a,
+.clinic-faq__q {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center
+}
+
+.clinic-faq__q,
+.clinic-faq__toggle {
+  color: var(--faq-accent)
+}
+
+.clinic-faq__toggle {
+  position: relative;
+  width: 24px;
+  height: 24px
+}
+
+.clinic-faq__toggle::after,
+.clinic-faq__toggle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 2px;
+  background: currentColor;
+  transform: translate(-50%, -50%);
+  transition: transform .2s ease
+}
+
+.clinic-faq__toggle::after {
+  transform: translate(-50%, -50%) rotate(90deg)
+}
+
+.clinic-faq__item[open] .clinic-faq__toggle::after {
+  transform: translate(-50%, -50%) rotate(0)
+}
+
+.clinic-faq__item[open] .clinic-faq__question {
+  background: #f0f8fa
+}
+
+.section_06 {
+  background-color: #fcfbfbde;
+}
+
+.clinic-faq__answer {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr);
+  align-items: start;
+  gap: 20px;
+  padding: 26px 64px 30px 20px
+}
+
+.clinic-faq__a {
+  margin-top: 3px;
+  color: var(--faq-navy)
+}
+
+.clinic-faq__answer p {
+  min-width: 0;
+  margin: 0;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 2;
+  overflow-wrap: anywhere
+}
+
+.clinic-faq__question:focus-visible {
+  outline: 2px solid var(--faq-accent);
+  outline-offset: -2px
+}
+
+.closing-consult,
+.closing-consult * {
+  box-sizing: border-box
+}
+
+.closing-consult {
+  --consult-teal: #2795ad;
+  --consult-navy: #1781C9;
+  padding: 88px 24px 80px;
+  background: #edf7fa;
+  color: #333
+}
+
+.closing-consult__inner {
+  width: 100%;
+  max-width: 950px;
+  margin-inline: auto
+}
+
+.closing-consult__content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  grid-template-areas: "photo title" "photo text";
+  column-gap: 45px;
+  row-gap: 24px;
+  align-content: center
+}
+
+.closing-consult__title {
+  grid-area: title;
+  align-self: end;
+  margin: 0;
+  color: var(--consult-navy);
+  font-family: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: clamp(26px, 2.65vw, 32px);
+  font-weight: 600;
+  line-height: 1.9;
+  letter-spacing: .01em
+}
+
+.closing-consult__title span {
+  text-decoration-line: underline;
+  text-decoration-color: #bfe3ec;
+  text-decoration-thickness: .25em;
+  text-underline-offset: -.08em;
+  text-decoration-skip-ink: none
+}
+
+.closing-consult__photo {
+  grid-area: photo;
+  position: relative;
+  align-self: center;
+  margin: 0 12px 12px 0
+}
+
+.closing-consult__photo::before {
+  content: "";
+  position: absolute;
+  inset: 14px -14px -14px 14px;
+  background: #cde7ee
+}
+
+.closing-consult__photo img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/3;
+  object-fit: cover
+}
+
+.closing-consult__text {
+  grid-area: text;
+  align-self: start;
+  min-width: 0;
+  margin: 0;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 2 !important;
+  overflow-wrap: anywhere
+}
+
+.closing-consult__buttons {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 950px;
+  margin: 52px auto 0
+}
+
+.closing-consult__button {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  overflow: hidden;
+  min-width: 0;
+  min-height: 104px;
+  padding: 22px 48px;
+  border: 1px solid var(--button-color);
+  border-radius: 10px;
+  background: var(--button-color);
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 7px 16px rgb(25 55 75/20%);
+  -webkit-tap-highlight-color: transparent;
+  transition: transform .25s ease, background-color .25s ease, border-color .25s ease, box-shadow .25s ease
+}
+
+.closing-consult__button--web {
+  --button-color: #00aad9;
+  --button-hover: #029bc6
+}
+
+.closing-consult__button--tel {
+  --button-color: #193d80;
+  --button-hover: #123064
+}
+
+.closing-consult__button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(110deg, transparent 30%, rgb(255 255 255/8%) 40%, rgb(255 255 255/38%) 50%, rgb(255 255 255/8%) 60%, transparent 70%);
+  transform: translateX(-150%);
+  animation: closing-consult-shine 4.8s ease-in-out infinite;
+  pointer-events: none
+}
+
+.closing-consult__button--tel::before {
+  animation-delay: .6s
+}
+
+.closing-consult__button::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  z-index: 2;
+  border: 1px solid rgb(255 255 255/90%);
+  border-radius: 5px;
+  pointer-events: none
+}
+
+.closing-consult__button>* {
+  position: relative;
+  z-index: 1
+}
+
+.closing-consult__icon {
+  display: block;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round
+}
+
+.closing-consult__web-label {
+  font-family: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: .03em
+}
+
+.closing-consult__tel-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px
+}
+
+.closing-consult__tel-label {
+  font-family: "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: .04em
+}
+
+.closing-consult__number {
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap
+}
+
+.closing-consult__button>.closing-consult__arrow {
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: translateY(-50%) rotate(45deg);
+  transition: transform .25s ease
+}
+
+.closing-consult__button:focus-visible {
+  outline: 3px solid var(--consult-navy);
+  outline-offset: 5px
+}
+
+.closing-consult__button:active {
+  transform: translateY(1px)
+}
+.floating-booking,
+.floating-booking * {
+  box-sizing: border-box
+}
+
+.floating-booking {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1100;
+  padding: 14px 24px;
+  padding-bottom: calc(14px + env(safe-area-inset-bottom, 0));
+  border-top: 1px solid rgb(255 255 255/85%);
+  background: rgb(245 250 252/94%);
+  box-shadow: 0-5px 24px rgb(22 53 74/10%);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px)
+}
+
+.floating-booking__inner {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto
+}
+
+.floating-booking__button {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  overflow: hidden;
+  min-width: 0;
+  min-height: 76px;
+  padding: 14px 42px;
+  border: 1px solid var(--floating-color);
+  border-radius: 9px;
+  background: var(--floating-color);
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 5px 12px rgb(22 53 74/18%);
+  -webkit-tap-highlight-color: transparent;
+  transition: transform .2s ease, background-color .2s ease, border-color .2s ease, box-shadow .2s ease
+}
+
+.floating-booking__button--web {
+  --floating-color: #00aad9;
+  --floating-hover: #029bc6
+}
+
+.floating-booking__button--tel {
+  --floating-color: #193d80;
+  --floating-hover: #123064
+}
+
+.floating-booking__button::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  z-index: 2;
+  border: 1px solid rgb(255 255 255/90%);
+  border-radius: 4px;
+  pointer-events: none
+}
+
+.floating-booking__button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(110deg, transparent 30%, rgb(255 255 255/8%) 40%, rgb(255 255 255/40%) 50%, rgb(255 255 255/8%) 60%, transparent 70%);
+  transform: translateX(-150%);
+  animation: floating-booking-shine 4.8s ease-in-out infinite;
+  pointer-events: none
+}
+
+.floating-booking__button--tel::before {
+  animation-delay: .6s
+}
+
+.floating-booking__button>* {
+  position: relative;
+  z-index: 1
+}
+
+.floating-booking__icon {
+  display: block;
+  flex: 0 0 26px;
+  width: 26px;
+  height: 26px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round
+}
+
+.floating-booking__web-label {
+  font-family: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: nowrap
+}
+
+.floating-booking__tel-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px
+}
+
+.floating-booking__tel-label {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  font-size: 12px;
+  line-height: 1.4
+}
+
+.floating-booking__number {
+  font-family: Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap
+}
+
+.floating-booking__button>.floating-booking__arrow {
+  position: absolute;
+  top: 50%;
+  right: 23px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: translateY(-50%) rotate(45deg);
+  transition: transform .2s ease
+}
+
+.floating-booking__button:focus-visible {
+  outline: 3px solid #193d80;
+  outline-offset: 3px
+}
+
+.floating-booking__button:active {
+  transform: translateY(1px)
+}
+.access h2 {
+  font-family: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+
+a:active,
+a:hover {
+  color: #fff;
+}
+
+.lp-payment,
+.lp-payment * {
+  box-sizing: border-box;
+}
+
+.lp-payment {
+  padding: 0 24px 80px;
+  background: #fff;
+  color: #333;
+}
+
+.lp-payment__inner {
+  width: 100%;
+  max-width: 950px;
+  margin-inline: auto;
+  padding: 36px 40px 40px;
+  border-top: 3px solid #00aad9;
+  background: #edf7fa;
+}
+
+.lp-payment__title {
+  margin: 0 0 20px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #1781c9;
+  font-family:
+    "Noto Serif JP", "Yu Mincho",
+    "Hiragino Mincho ProN", serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: .04em;
+  text-align: center;
+}
+
+.lp-payment__text {
+  margin: 0;
+  font-family:
+    "Noto Sans JP", "Hiragino Kaku Gothic ProN",
+    "Yu Gothic", Meiryo, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.9;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.lp-payment__figure {
+  margin: 28px 0 0;
+  padding: 24px;
+  border: 1px solid #d5e7ed;
+  background: #fff;
+}
+
+.lp-payment__image {
+  display: block;
+  width: 100%;
+  max-width: 790px;
+  height: auto;
+  margin-inline: auto;
+}
+
+@media (max-width: 767px) {
+  .lp-payment {
+    padding: 0 20px 48px;
+  }
+
+  .lp-payment__inner {
+    padding: 26px 16px 20px;
+  }
+
+  .lp-payment__title {
+    margin-bottom: 16px;
+    font-size: 24px;
+    letter-spacing: .02em;
+  }
+
+  .lp-payment__text {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .lp-payment__figure {
+    margin-top: 22px;
+    padding: 12px 8px;
+  }
+}
+
+@media (max-width: 550px) {
+  .lp-payment {
+    padding-inline: .6em;
+  }
+}
+
+.lp-interpreter {
+  display: none;
+}
+
+html[lang="zh-CN"] .lp-interpreter {
+  display: block;
+  margin: 0 0 28px;
+  padding: 16px 20px;
+  border-left: 3px solid #00aad9;
+  background: #edf7fa;
+  color: #193d80;
+  font-size: 16px;
+  line-height: 1.8;
+}
